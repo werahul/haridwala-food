@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap');
+/* font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;600;700;800&display=swap');
+
+/* font-family: 'Manrope', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Navbar Styling */
+.nav {
+    width: 100%;
+    height: 11vh;
+    background-color: #ffe0d5;
+    display: flex;
+    align-items: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lugrasimo', cursive;
+    margin-left: 10px;
+}
+
+#logo {
+    font-size: 2.7rem;
+
+}
+
+.right {
+    margin: 0 auto;
+}
+
+.right li {
+    list-style: none;
+    float: left;
+    margin: 0 5px;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Hubballi', cursive;
+    font-size: larger;
+    font-weight: bolder;
+    margin: 0 12px;
+    padding: 5px;
+    transition: all 300ms linear;
+
+}
+
+
+.right a:hover {
+    background-color: rgba(59, 58, 57, 0.837);
+    border-radius: 7px;
+    color: white;
+
+}
+
+.login {
+    margin-right: 20px;
+}
+
+.login button {
+    padding: 5px;
+    border-radius: 50%;
+    height: 6vh;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+/* Card Styling */
+
+.main {
+    width: 22vw;
+    height: 48vh;
+    margin: 10px;
+}
+
+.img img {
+    height: 30vh;
+    width: 22vw;
+    border-radius: 11px;
+    transition: all 300ms linear;
+
+}
+
+.img img:hover {
+    height: 31vh;
+    width: 23vw;
+    border-radius: 0px;
+}
+
+.title {
+    font-family: 'Hubballi', cursive;
+}
+
+.price_order {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 12px;
+}
+
+.price_order p {
+    color: darkgreen;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.btn {
+    padding: 3px 6px;
+    font-family: 'Hubballi', cursive;
+    border: none;
+    height: 5vh;
+    font-size: 1rem;
+}
+
+.btn-green {
+    background-color: rgb(0 125 0);
+    color: yellow;
+}
+
+.btn-blue {
+    background-color: #ff8a00;
+    color: white;
+    transition: all 300ms linear;
+}
+
+.btn-blue:hover {
+    background-color: transparent;
+    color: #ff8a00;
+    border: 2px solid #ff8a00;
+    border-radius: 7px;
+}
+
+/* Showcase styling */
+.cat {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 5vh;
+    margin: 12px 0;
+}
+
+.cat button {
+    margin: 0 12px;
+    width: auto;
+    padding: 6px;
+    border: 2px solid salmon;
+    color: salmon;
+    background: transparent;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 500ms linear;
+}
+
+.cat button:hover {
+    background-color: black;
+    color: white;
+    border-radius: 0px;
+    border: none;
+}
+
+.main-cont {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+/* Footer styling start */
+
+.foot_main {
+    width: 100%;
+    height: 45vh;
+    background-color: #ebd6d6;
+    position :relative;
+    bottom: 0px;    
+    margin-top: auto;
+}
+
+.first_up {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+.first_up .img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footDown {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footDown {
+    justify-content: center;
+    padding: 20px;
+}
+
+.foot_main h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 1rem;
+    background-color: rgb(49, 46, 46);
+    color: white;
+    display: inline-block;
+    border-radius: 20px;
+    width: auto;
+    padding: 4px;
+    font-size: .8rem;
+}
+
+.foot_main li {
+    font-family: 'Hubballi', cursive;
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.foot_main input {
+    background: transparent;
+    color: black;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 7px;
+    outline: none;
+}
+
+.foot_main button {
+    padding: 6px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.app {
+    margin-top: 20px;
+}
+
+.app h2 {
+    color: white;
+    background-color: rgb(54, 52, 52);
+    border-radius: 20px;
+    padding: 4px 8px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.appName img {
+    height: 7vh;
+    width: 9vw;
+    cursor: pointer;
+}
+
+/* Home Styling Start */
+.bgim {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../im/bg.jpg');
+    background-size: cover;
+    background-color: aquamarine;
+}
+
+.heroText {
+    color: rgb(170, 20, 70);
+    height: 50vh;
+    width: 100%;
+    padding: 5rem;
+    text-align: justify;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: italic;
+    text-shadow: 1px 1px rgb(170, 20, 70);
+
+}
+
+.info-sec {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: .8rem 2rem;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* -------BOX IMG STYLING START */
+.imgsec {
+    width: auto;
+    height: 60vh;
+}
+
+.imgsec img {
+    height: 55vh;
+    width: 35vw;
+}
+
+/* -------BOX IMG STYLING ENDS */
+
+/* -------BOX TEXT STYLING STARTS */
+.text {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    text-align: left;
+    justify-content: center;
+    margin: 2rem 1rem;
+    height: 55vh;
+
+}
+
+.text h1 {
+    font-size: 2rem;
+    font-family: 'Manrope', sans-serif;
+    color: #ff2b85;
+    text-transform: capitalize;
+}
+
+.text h4 {
+    font-family: 'Manrope', sans-serif;
+    color: gray;
+    text-transform: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.text button {
+    width: 20%;
+    height: 7vh;
+    background-color: #ff2b85;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 2.5rem;
+    cursor: pointer;
+}
+
+.text button:hover {
+    background-color: transparent;
+    color: #ff2b85;
+    border: 2px solid #ff2b85;
+}
+
+/* -------BOX TEXT STYLINÄG ENDS */
